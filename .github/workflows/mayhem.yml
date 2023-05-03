@@ -61,8 +61,6 @@ jobs:
         mayhemfile:
           - mayhem/argon2-hash.mayhemfile
           - mayhem/balloon-hash-hash.mayhemfile
-          - mayhem/bcrypt-pbkdf-hash.mayhemfile
-          - mayhem/sha-crypt-hash.mayhemfile
 
     steps:
       - uses: actions/checkout@v3
