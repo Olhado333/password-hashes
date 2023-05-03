@@ -1,0 +1,5 @@
+project: password-hashes
+target: balloon-hash-hash
+duration: 600
+cmds:
+    - cmd: /fuzzers/fuzz_balloon-hash-hash

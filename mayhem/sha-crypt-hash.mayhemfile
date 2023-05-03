@@ -1,0 +1,5 @@
+project: password-hashes
+target: sha-crypt-hash
+duration: 600
+cmds:
+    - cmd: /fuzzers/fuzz_sha-crypt-hash

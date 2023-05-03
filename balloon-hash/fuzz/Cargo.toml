@@ -1,0 +1,22 @@
+[package]
+name = "fuzz_balloon-hash"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+balloon-hash = { path = ".." }
+libfuzzer-sys = "0.4.0"
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "fuzz_balloon-hash-hash"
+path = "fuzz_targets/balloon-hash-hash.rs"
+test = false
+doc = false

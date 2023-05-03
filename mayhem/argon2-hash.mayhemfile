@@ -1,0 +1,5 @@
+project: password-hashes
+target: argon2-hash
+duration: 600
+cmds:
+    - cmd: /fuzzers/fuzz_argon2-hash

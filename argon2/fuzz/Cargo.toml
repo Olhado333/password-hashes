@@ -1,0 +1,22 @@
+[package]
+name = "fuzz_argon2"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+argon2 = { path = ".." }
+libfuzzer-sys = "0.4.0"
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "fuzz_argon2-hash"
+path = "fuzz_targets/argon2-hash.rs"
+test = false
+doc = false
